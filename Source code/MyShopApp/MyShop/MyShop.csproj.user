@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Splash.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddClassification.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddOrderItem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddStock.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Dashboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\InfoCard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EditClassification.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EditOrderItem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EditStock.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\LoginView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\Order.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\OrderItem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Orders.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Settings.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Statistic.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Stock.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Classification.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\StockStatistic.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Splash.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Styles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Utilities\DataTemplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddClassification.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddOrderItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddStock.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Dashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\InfoCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\EditClassification.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\EditOrderItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\EditStock.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\LoginView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\Order.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\OrderItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Orders.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Settings.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Statistic.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Stock.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Classification.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\StockStatistic.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

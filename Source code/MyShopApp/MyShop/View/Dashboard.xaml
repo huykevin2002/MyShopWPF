@@ -1,0 +1,152 @@
+﻿<UserControl x:Class="MyShop.View.Dashboard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MyShop.View"
+             xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+             xmlns:uc="clr-namespace:MyShop.UserControls"
+             mc:Ignorable="d"
+             Style="{StaticResource Page_Style}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal"
+                                    VerticalAlignment="Bottom"
+                                    HorizontalAlignment="Right"
+                                    Margin="0 0 30 20">
+            <RadioButton x:Name="btnWeek" Content="Week" Style="{StaticResource topMenuButton}" IsChecked="True" Click="btnWeek_Click"/>
+            <RadioButton x:Name="btnMonth" Content="Month" Style="{StaticResource topMenuButton}" Click="btnMonth_Click"/>
+        </StackPanel>
+
+        <TextBlock Text="Dashboard"
+                                   FontSize="26"
+                                   Foreground="#37306B"
+                                   HorizontalAlignment="Left"
+                                   Margin="20 15 0 20"/>
+
+        <Grid Grid.Row="1" Margin="50 10 15 10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <uc:InfoCard Grid.Column="0" 
+                        Title="Total Books"
+                        Icon="Box"
+                        Background1="#827bff"
+                        Background2="#d9b5ff"
+                        EllipseBackground1="#b298fd"
+                        EllipseBackground2="#e4bbff" 
+                         x:Name="cardTotalBooks"
+                        />
+
+            <uc:InfoCard Grid.Column="1" 
+                        Title="Total Orders"
+                        Icon="ShoppingCart"
+                        Background1="#fd8a87"
+                        Background2="#f3ab92"
+                        EllipseBackground1="#fbd5a8"
+                        EllipseBackground2="#fdb89b"
+                         x:Name="cardTotalOrders"/>
+
+            <uc:InfoCard Grid.Column="3" 
+                        Title="Total Revenue"
+                        Icon="Coins"
+                        Background1="#fc84cb"
+                        Background2="#fc8fae"
+                        EllipseBackground1="#fc8fae"
+                        EllipseBackground2="#ffabe6"
+                         x:Name="cardTotalRevenue"/>
+
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border CornerRadius="20"
+                                    Padding="35 25"
+                                    Background="#243771"
+                                    Margin="50 0 10 40">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal"
+                                                Margin="0 0 0 10">
+                        <fa:IconImage Icon="Circle" Style="{StaticResource titleIcon}"/>
+                        <TextBlock Text="Low on stock" Style="{StaticResource titleText}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Margin="-35 0 -35 0">
+                        <uc:Order 
+                                    Icon="Box"
+                                  x:Name="los1"
+                                  Visibility="Hidden"/>
+                        <uc:Order 
+                                  Icon="Box"
+                                  x:Name="los2"
+                                  Visibility="Hidden"/>
+                        <uc:Order Visibility="Hidden"
+                                    Icon="Box"
+                                  x:Name="los3"/>
+                        <uc:Order Visibility="Hidden"
+                                    Icon="Box"
+                                  x:Name="los4"/>
+                        <uc:Order Visibility="Hidden"
+                                    Icon="Box"
+                                 x:Name="los5"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <Border CornerRadius="20"
+                                    Padding="35 25"
+                                    Background="#243771"
+                                    Margin="30 0 30 40"
+                                    Grid.Column="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal"
+                                                Margin="0 0 0 10">
+                        <fa:IconImage Icon="Circle" Style="{StaticResource titleIcon}"/>
+                        <TextBlock Text="Latest Orders" Style="{StaticResource titleText}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Margin="-35 0 -35 0">
+                        <uc:Order Visibility="Hidden"
+                                Icon="ShoppingCart"
+                                  x:Name="lo1"
+                                />
+                        <uc:Order Visibility="Hidden"
+                                Icon="ShoppingCart"
+                                   x:Name="lo2"/>
+                        <uc:Order Visibility="Hidden"
+                                Icon="ShoppingCart"
+                                   x:Name="lo3"/>
+                        <uc:Order Visibility="Hidden"
+                                Icon="ShoppingCart"
+                                   x:Name="lo4"/>
+                        <uc:Order Visibility="Hidden"
+                                Icon="ShoppingCart"
+                                   x:Name="lo5"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

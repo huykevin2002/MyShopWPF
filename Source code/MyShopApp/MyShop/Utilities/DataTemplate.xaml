@@ -1,0 +1,34 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vm="clr-namespace:MyShop.ViewModel"
+                    xmlns:view="clr-namespace:MyShop.View">
+
+    <DataTemplate DataType="{x:Type vm:DashboardVM}">
+        <view:Dashboard />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:ClassificationVM}">
+        <view:Classification />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:StockVM}">
+        <view:Stock />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:OrdersVM}">
+        <view:Orders />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:StatisticVM}">
+        <view:Statistic />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:SettingsVM}">
+        <view:Settings />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:OrderItemVM}">
+        <view:OrderItem />
+    </DataTemplate>
+
+</ResourceDictionary>
